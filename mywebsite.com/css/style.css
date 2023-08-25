@@ -1,0 +1,36 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover{
+  background-color: black;
+}
+
+.fakeimg {
+  position: relative;
+  height: 50%;
+  float:right;
+  width:250px;
+  height:300px;
+  padding: 10px;
+}
+
+.image {
+  position: relative;
+  animation-name:imag;
+  animation-duration: 3s;
+}
+
+@keyframes imag {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+ 
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
